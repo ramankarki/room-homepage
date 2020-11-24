@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "../common.blocks/FadeOut/FadeOut";
+
+$primary-gray-dark: hsl(0, 0%, 63%);
+$primary-black: hsl(0, 0%, 0%);
+$primary-white:  hsl(0, 0%, 100%);
+$primary-gray-darkest: hsl(0, 0%, 27%);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  &:focus {
+    outline: 2px dotted 
+  }
+}
+
+body {
+  font-size: .85rem;
+  font-weight: 500;
+  font-family: 'Spartan', sans-serif;
+}
+
+@mixin column($num) {
+  grid-column: $num span;
+}
