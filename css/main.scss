@@ -1,10 +1,22 @@
 @charset "utf-8";
-@import "../common.blocks/FadeOut/FadeOut";
 
 $primary-gray-dark: hsl(0, 0%, 63%);
 $primary-black: hsl(0, 0%, 0%);
 $primary-white:  hsl(0, 0%, 100%);
 $primary-gray-darkest: hsl(0, 0%, 27%);
+
+$text-xl: 2.5rem;
+$text-lg: 1.8rem;
+$text-md: 1.3rem;
+$text-nm: 1rem;
+$text-sm: .9rem;
+$text-xm: .85rem;
+
+$gap-xl: 4rem;
+$gap-lg: 3rem;
+$gap-md: 2rem;
+$gap-nm: 1rem;
+$gap-sm: .5rem;
 
 
 * {
