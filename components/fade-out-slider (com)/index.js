@@ -4,7 +4,7 @@ const slideBtnRight = document.querySelector(".Slide-Btn-right-js");
 const slideBtnleft = document.querySelector(".Slide-Btn-left-js");
 
 let activeSlide = 0;
-let interval = 3000;
+let interval = 5000;
 let intervalID;
 
 // before loading document

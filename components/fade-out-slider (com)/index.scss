@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.container {
-  height: 400px;
-  width: 50%;
-  margin: auto;
-}
-
 /* main Slide container */
 .SlideContainer {
   position: relative;
@@ -71,7 +58,7 @@
 .FadeOut,
 .FadeOut-reverse {
   animation-fill-mode: backwards;
-  animation-duration: 500ms;
+  animation-duration: 700ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
