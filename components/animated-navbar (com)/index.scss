@@ -1,19 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  
-  &:focus {
-    outline: none;
-  }
-}
-
-body {
-  font-weight: 500;
-  font-family: 'Spartan', sans-serif;
-  height: 1000px;
-}
+@import "animated-hamburgur-btn (com)/index";
 
 .fixed-container-sm {
   position: fixed;

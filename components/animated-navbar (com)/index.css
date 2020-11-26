@@ -1,19 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+.AnimatedBtn {
+  position: relative;
+  display: block;
+  width: 2rem;
 }
 
-*:focus {
-  outline: none;
+.AnimatedBtn-Top, .AnimatedBtn-Middle, .AnimatedBtn-Bottom {
+  width: 100%;
+  display: block;
+  height: .25rem;
+  background-color: white;
+  border-radius: 100rem;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
-body {
-  font-weight: 500;
-  font-family: 'Spartan', sans-serif;
-  height: 1000px;
+.AnimatedBtn-Middle {
+  margin: .3rem 0;
+}
+
+.AnimatedBtn-MiddleClick {
+  opacity: 0;
+}
+
+.AnimatedBtn-TopClick {
+  -webkit-transform: translateY(0.55rem) rotate(-45deg);
+          transform: translateY(0.55rem) rotate(-45deg);
+}
+
+.AnimatedBtn-BottomClick {
+  -webkit-transform: translateY(-0.55rem) rotate(45deg);
+          transform: translateY(-0.55rem) rotate(45deg);
+}
+
+.AnimatedBtn-Cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .fixed-container-sm {
