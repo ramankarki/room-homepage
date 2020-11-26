@@ -58,7 +58,6 @@ let reStackItem = (e) => {
 }
 
 let fadeNext = () => {
-    console.log(activeSlide);
     // update content with slider
     heroHeading.textContent = content[activeSlide].heading;
     heroText.textContent = content[activeSlide].text;
