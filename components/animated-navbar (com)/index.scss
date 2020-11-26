@@ -1,14 +1,14 @@
-@import "animated-hamburgur-btn (com)/index";
-
 .fixed-container-sm {
   position: fixed;
   width: 100%;
-  background-color: #2e2e2e;
+  transition: 400ms ease-out;
+  z-index: 100;
+  background-image: linear-gradient(rgba(85, 85, 85, 0.685), rgba(255, 255, 255, 0));
 
   @media (min-width: 786px) {
-    position: static;
+    position: absolute;
+    left: 0;
   }
-  transition: 400ms ease-out;
 }
 
 .nav {
@@ -18,9 +18,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 120px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     justify-content: flex-start;
   }
 
@@ -29,13 +29,13 @@
     font-size: 1.5rem;
     text-decoration: none;
     
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       margin-right: 3rem;
     }
   }
 
   &-links {
-    height: 70px;
+    height: 120px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -48,7 +48,7 @@
     z-index: 98;
     background-color: white;
 
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       display: flex;
       position: static;
       width: 100%;
@@ -68,7 +68,7 @@
     position: relative;
     color: #2e2e2e;
     
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       color: white;
       padding: 1rem;
     }
@@ -85,7 +85,7 @@
       transition: 300ms;
       left: 0;
       
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
         background-color: white; 
       }
     }
@@ -103,13 +103,13 @@
   left: 0;
   z-index: 99;
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     display: none;
   }
 
   &-TopActive,
   &-MiddleActive,
   &-BottomActive {
-    background-color: #2e2e2e;
+    background-color: hsl(0, 0%, 63%);
   }
 }
