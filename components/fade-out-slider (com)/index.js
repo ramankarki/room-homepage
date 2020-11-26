@@ -2,6 +2,23 @@ const Slide = document.querySelector(".SlideContainer-js");
 const SlideItem = document.querySelectorAll(".Slide-Item-js");
 const slideBtnRight = document.querySelector(".Slide-Btn-right-js");
 const slideBtnleft = document.querySelector(".Slide-Btn-left-js");
+const heroContent = document.querySelector(".Hero-ContentInner");
+const heroHeading = document.querySelector(".Hero-Heading");
+const heroText = document.querySelector(".Hero-Text");
+const content = [
+    {
+        heading: "Discover innovative ways to decorate",
+        text: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
+    },
+    {
+        heading: "We are available all across the globe",
+        text: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
+    },
+    {
+        heading: "Manufactured with the best materials",
+        text: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
+    }
+]
 
 let activeSlide = 0;
 let interval = 5000;
@@ -41,8 +58,13 @@ let reStackItem = (e) => {
 }
 
 let fadeNext = () => {
+    console.log(activeSlide);
+    // update content with slider
+    heroHeading.textContent = content[activeSlide].heading;
+    heroText.textContent = content[activeSlide].text;
+    
     SlideItem[activeSlide].classList.add("FadeOut");
-
+    
     // this limits moving to next slide until animation ends.
     SlideItem[activeSlide].addEventListener("animationstart", () => {
         slideBtnRight.removeEventListener("click", fadeNext);
@@ -78,6 +100,8 @@ let fadePrev = () => {
     });
     SlideItem[activeSlide].style.zIndex = SlideItem.length - 1;
 
+    heroHeading.textContent = content[activeSlide].heading;
+    heroText.textContent = content[activeSlide].text;
     // add animation
     SlideItem[activeSlide].classList.add("FadeOut-reverse");
 
@@ -123,9 +147,15 @@ intervalID = setInterval(fadeNext, interval);
 Slide.addEventListener("mouseenter", () => {
     clearInterval(intervalID);
 });
+heroContent.addEventListener("mouseenter", () => {
+    clearInterval(intervalID);
+});
 
 // stop slider off hover
 Slide.addEventListener("mouseleave", () => {
+    intervalID = setInterval(fadeNext, interval);
+});
+heroContent.addEventListener("mouseleave", () => {
     intervalID = setInterval(fadeNext, interval);
 });
 
