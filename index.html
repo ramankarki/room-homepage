@@ -12,13 +12,106 @@
 
   <title>Frontend Mentor | Room homepage</title>
 
+  <link rel="stylesheet" href="components/animated-navbar (com)/animated-hamburgur-btn (com)/index.css">
+  <link rel="stylesheet" href="components/animated-navbar (com)/index.css">
+  <link rel="stylesheet" href="components/fade-out-slider (com)/index.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-  
+  <div class="Hero">
+    <!-- left column -->
+    <div class="Hero-Slider">
+      <div class="fixed-container-sm nav-height-js">
+        <nav class="nav">
+          <button class="AnimatedBtn">
+            <span class="AnimatedBtn-Top"></span>
+            <span class="AnimatedBtn-Middle"></span>
+            <span class="AnimatedBtn-Bottom"></span>
+            <div class="AnimatedBtn-Cover"></div>
+          </button>
+          <a href="/" class="nav-heading">room</a>
+          <div class="nav-links">
+            <a href="#" class="nav-item">home</a>
+            <a href="#" class="nav-item">about</a>
+            <a href="#" class="nav-item">shop</a>
+            <a href="#" class="nav-item">contact</a>
+          </div>
+        </nav>
+      </div>
 
+      <!-- fade out slider -->
+      <div class="SlideContainer SlideContainer-js">
+
+        <!-- next and previous buttons -->
+        <div class="Slide-Btn small-slide-btn-js">
+          <button class="Slide-Btn-left Slide-Btn-left-js"><img src="image/left-arrow.svg"
+              alt="left arrow button for slide"></button>
+          <button class="Slide-Btn-right Slide-Btn-right-js"><img src="image/right-arrow.svg"
+              alt="right arrow button for slide"></button>
+        </div>
+
+        <!-- Slide container  -->
+        <ul class="Slide">
+
+          <!-- Slides -->
+          <li class="Slide-Item Slide-Item-js">
+            <img class="Slide-img" src="image/desktop-image-hero-1.jpg" alt="first slider">
+          </li>
+          <li class="Slide-Item Slide-Item-js">
+            <img class="Slide-img" src="image/desktop-image-hero-2.jpg" alt="second slider">
+          </li>
+          <li class="Slide-Item Slide-Item-js">
+            <img class="Slide-img" src="image/desktop-image-hero-3.jpg" alt="third slider">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- right column -->
+    <div class="Hero-Content">
+      <div class="Hero-ContentInner">
+        <h1 class="Hero-Heading">Manufactured with the best materials</h1>
+        <p class="Hero-Text">
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to
+          ensure that every product is made as perfect and as consistent as possible. With three decades of experience
+          in this industry, we understand what customers want for their home and office.
+        </p>
+        <a href="#" class="Hero-Btn">S &nbsp; H &nbsp; O &nbsp; P &nbsp; &nbsp; &nbsp; N &nbsp; O &nbsp; W<img
+            class="arrow-icon" src="image/icon-arrow.svg" alt="show now arrow svg"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- three column layout -->
+  <div class="about">
+    <div class="about-img">
+      <img src="image/image-about-dark.jpg" alt="about section dark image">
+    </div>
+    <div class="about-content">
+      <div class="about-contentInner">
+        <h2 class="about-heading">
+          ABOUT OUR FURNITURE
+        </h2>
+        <p class="about-text">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+    </div>
+    <div class="about-img">
+      <img src="image/image-about-light.jpg" alt="about section light image">
+    </div>
+  </div>
+
+
+  <script src="components/animated-navbar (com)/animated-hamburgur-btn (com)/index.js"></script>
+  <script src="components/animated-navbar (com)/index.js"></script>
+  <script src="components/fade-out-slider (com)/index.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
